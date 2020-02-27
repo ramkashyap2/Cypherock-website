@@ -1,0 +1,229 @@
+
+/* nav {
+  background-color: #000;
+  overflow: unset;
+} */
+
+  .dropdown-menu {
+    background-color:#000;
+  }
+
+  .carousel-inner img{
+    height:100%;
+    width:100%;
+  }
+
+  .nav-item {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .nav-collapse {
+    color:#FFFFFF;
+    padding-right: -1rem;
+  }
+
+  .navbar-container {
+    margin-top: 0.8rem;
+  }
+
+  
+
+/* -------- screen 1 -------------*/
+
+  .screen-1 {
+    background-image: url('../static/img/img-16.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 500px; */
+ }
+
+ .screen-1-title {
+    padding-left:  6 rem;
+ }
+
+/* ---------- faqs -------------*/
+
+  .faq-div {
+    background-color: #E5E5E5;
+    padding-top: 3rem;
+  }
+
+  /* .faq-container {
+    padding-bottom: 5rem;
+  } */
+
+  .faq-container img{
+    width: 50%;
+    height: 50%;
+  }
+
+  .faq-number {
+    margin-top: 1rem;
+    background-image: url('../static/img/faq-orange-square.png');
+    background-repeat: no-repeat;
+    background-size: 120px 120px;
+  }
+
+  .faq-number-text {
+    font-family: 'Bold';
+    color:#DB953C;
+    padding-top: 2rem;
+    padding-left: 2rem;
+  }
+
+  .faq-row {
+    /* margin-left:2rem; */
+    /* margin-right: 2rem; */
+    background-color: #FFFFFF;
+  }
+
+  .faq-saperator {
+    background-color:#E5E5E5;
+  }
+
+  .faq-p {
+    padding-left:3rem; 
+  }
+
+/*--------footer -------*/
+  .footer {
+    background-color: #F2F2F2;
+  }
+
+  .footer-logo {
+    width: 16rem;
+  }
+
+  .connect a{
+    font-size:2em;
+    padding:1rem; 
+  }
+
+  footer {
+    background-color: #D7D7D7;
+  }
+
+  .footer-padding {
+    padding-top: 4rem;
+  }
+
+/* ------ hr styles -------*/
+
+  .hr-orange {
+    border-top: 1px solid #B47D36;
+  }
+
+  .hr-faq {
+    border-top: 3px solid #FAD8AD;
+    width:30%;
+  }
+
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+}
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 576px) {
+  .faq-row {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+  
+}
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('mac.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .tablet-col-3 {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+    .tablet-col-1 {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 8.333333%;
+      flex: 0 0 8.333333%;
+      max-width: 8.333333%;
+    }
+    .tablet-col-5
+      {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 41.666667%;
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+    }
+  }
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
+
+
+
+
+
+

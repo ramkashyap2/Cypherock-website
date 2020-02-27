@@ -1,0 +1,352 @@
+/* ---------- Navbar ---------*/
+body {
+  background: #f7f7f7;
+}
+
+.mt-2rem {
+  margin-top: 2rem;
+}
+nav {
+  /* background-color: #000000a6; */
+  overflow: unset;
+}
+.point-mt {
+  margin-top: 3rem;
+}
+.point-1 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+.point-1 p {
+  margin-bottom: 3rem;
+}
+.point-1 img {
+  width: 100%;
+}
+.display-4 {
+  /* word-break: break-all; */
+  font-size: 2.5rem;
+}
+.md-hide {
+  display: none;
+}
+.lead {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-left: 15px;
+}
+.cyptocurrencies {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item a,
+button {
+  color: #ffffff;
+}
+
+.dropdown-menu {
+  background-color: #000;
+}
+
+.carousel-inner img {
+  height: 100%;
+  width: 100%;
+}
+
+.nav-item {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.nav-collapse {
+  color: #ffffff;
+  padding-right: -1rem;
+}
+
+.navbar-container {
+  margin-top: 0.8rem;
+}
+
+/*----------- Screen 1 -----------*/
+
+.screen-1 {
+  background-image: url('../static/img/intHardware-Wallet.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 500px; */
+}
+
+.screen-1-title {
+  padding-left: 6 rem;
+}
+
+/*----------- intro ------------ */
+.intro {
+  padding-top: 5rem;
+  padding-bottom: 0rem;
+  background-color: #f7f7f7;
+}
+
+.jumbotron-intro {
+  /*margin-top: 5rem;*/
+  margin-left: 0rem;
+  margin-right: 0rem;
+  /*margin-bottom: 5rem;*/
+  background-color: #ffffff;
+}
+
+/*-------point 1 ------*/
+
+.point-1-row {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-image: url('../static/img/wallet/elipse-orange-left.png');
+  background-repeat: no-repeat;
+  background-size: 35% 85%;
+}
+
+.point-1-row img {
+  margin-left: 4rem;
+  margin-top: 5rem;
+  height: 40%;
+  width: auto;
+}
+
+.point-1-text {
+  margin-left: 3rem;
+  margin-right: 5rem;
+}
+
+/* ------- point-2 ---------*/
+
+/*-------point 1 ------*/
+
+.point-2-row {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-image: url('../static/img/wallet/elipse-orange-right.png');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 35% 85%;
+}
+
+.point-2-row img {
+  margin-left: 4rem;
+  margin-top: 5rem;
+  height: 40%;
+  width: auto;
+}
+
+.point-2-text {
+  margin-left: 5rem;
+  margin-right: 10rem;
+}
+
+/* -------- hr ------------*/
+.hr-orange {
+  border-top: 1px solid #b47d36;
+  width: 10%;
+}
+
+/* --------footer ---------*/
+
+.footer {
+  background-color: #f2f2f2;
+}
+
+.footer-logo {
+  width: 16rem;
+}
+
+.connect a {
+  font-size: 2em;
+  padding: 1rem;
+}
+
+footer {
+  background-color: #d7d7d7;
+}
+
+.footer-padding {
+  padding-top: 4rem;
+}
+
+.social a {
+  font-size: 4em;
+  padding: 1rem;
+}
+
+.wallet-title {
+  background-image: url('../static/img/main.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.wallet-point-one {
+  background-color: #f2f2f2;
+}
+
+.wallet-point-one img {
+  padding-left: 0.2rem;
+  padding-right: 1rem;
+}
+
+.crypto-container {
+  background-color: #cfcdca;
+  margin-right: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-left: 3rem;
+}
+
+.crypto-container img {
+  height: 4rem;
+  width: 4rem;
+}
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+  .point-1 p {
+    word-break: break-word;
+    text-align: left !important;
+  }
+  .point-1 {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+  .point-1 img {
+    width: 50%;
+  }
+  .point-mt {
+    margin-top: 0rem;
+  }
+  .xs-hide {
+    display: none;
+  }
+  .md-hide {
+    display: block;
+  }
+}
+@media (max-width: 576px) {
+  .crypto-container {
+    margin-right: 0rem;
+    margin-left: 0rem;
+  }
+  .jumbotron-intro {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+  .point-1-row {
+    margin-top: 5rem;
+    margin-bottom: 0rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-image: url(../static/img/wallet/elipse-orange-left.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 200px;
+  }
+  .point-1-row img {
+    margin-left: 1rem;
+    margin-top: 4rem;
+    height: 24%;
+    width: auto;
+  }
+  .mt--200 {
+    margin-top: -200px;
+  }
+  .point-1-text {
+    margin-left: 0rem;
+    margin-right: 0rem;
+    text-align: justify !important;
+  }
+  .lead {
+    text-align: justify;
+  }
+}
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0 !important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('mac.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*='col-'] {
+  padding: 1rem;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .crypto-container {
+      margin-right: 0rem;
+      margin-left: 0rem;
+  }
+  .jumbotron-intro {
+    margin-top: 0rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    margin-bottom: 0rem;
+}
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .tablet-col-3 {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+    .tablet-col-1 {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 8.333333%;
+      flex: 0 0 8.333333%;
+      max-width: 8.333333%;
+    }
+    .tablet-col-5
+      {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 41.666667%;
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+    }
+  }

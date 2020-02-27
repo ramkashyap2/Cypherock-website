@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>
+      Cypherock - Next-Gen Hardware Wallet With Key Recovery & Backup
+    </title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="../static/img/favicon.png" />
+    <link href="../css/index.css" rel="stylesheet" />
+    <link href="../css/wiki.css" rel="stylesheet" />
+    <!-- Google Tag Manager -->
+    <script>
+      ;(function (w, d, s, l, i) {
+        w[l] = w[l] || []
+        w[l].push({
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js'
+        })
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : ''
+        j.async = true
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+        f.parentNode.insertBefore(j, f)
+      })(window, document, 'script', 'dataLayer', 'GTM-KWPLJ84')
+    </script>
+    <!-- End Google Tag Manager -->
+    <script>
+      ;(function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            ;(h.hj.q = h.hj.q || []).push(arguments)
+          }
+        h._hjSettings = { hjid: 1631139, hjsv: 6 }
+        a = o.getElementsByTagName('head')[0]
+        r = o.createElement('script')
+        r.async = 1
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv
+        a.appendChild(r)
+      })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=')
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"
+      integrity="sha256-S1J4GVHHDMiirir9qsXWc8ZWw74PHHafpsHp5PXtjTs="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body
+    data-spy="scroll"
+    data-target="#navbar"
+    data-offset="60"
+    oncontextmenu="return false;"
+  >
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-KWPLJ84"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header id="header" class="header_section sticky-top">
+      <nav class="navbar navbar-expand-lg  navbar-light ">
+        <div class="container navbar-container">
+          <a href="/index" class="navbar-brand">
+            <img src="../static/img/logo.png" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto topnav">
+              <li class="nav-item active">
+                <a href="/about" class="nav-link">
+                  <span class="sr-only">(current)</span>About</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Applications <i><img src="../static/img/Arrow.png"/></i>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/wallet">Hardware Wallet</a>
+                  <a class="dropdown-item" href="/backup">Crypto Backup</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="/features" class="nav-link">Features</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="https://medium.com/cypherock"
+                  target="_blank"
+                  class="nav-link"
+                  >Blog</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="/security" class="nav-link">Security</a>
+              </li>
+              <li class="nav-item">
+                <a href="/faq" class="nav-link">FAQ</a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  href="https://shop.cypherock.com"
+                  type="button"
+                  class="btn btn-outline-warning btn-md mx-auto "
+                  target="”_blank”"
+                >
+                  Pre Order
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="height-82"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="wiki">
+            <h2>Privacy Policy</h2>
+            <p>
+              Cypherock (hereinafter "Cypherock" or “Faucet Labs Private
+              Limited” or ''we” ) regards as of paramount importance the
+              protection and security of information about you. The purpose of
+              this Privacy Policy is to inform you about how we use your Data,
+              the security measures we implement to ensure their integrity and
+              the rights you have to control the use of your Data.
+            </p>
+            <p>
+              The Privacy Policy is applicable in the existing relationship
+              between you, User of our Website and Cypherock, owner and
+              publisher of the Website. This Privacy Policy applies to the use
+              of any Data we collect or that you provide to us in connection
+              with your use of our Website. We encourage you to read it
+              carefully.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row bottom" id="Physical">
+        <div class="col-md-12">
+          <div class="wiki">
+            <h3>RECIPIENTS OF PERSONAL DATA</h3>
+            <p>
+              9.We transmit your Data to our employees who are authorized to
+              process them as part of their duties.
+            </p>
+            <p>
+              We may also transmit some of your data to our technical and
+              logistic service providers acting on our behalf, and we ensure
+              that they provide for the necessary guarantees with respect to the
+              GDPR.
+            </p>
+            <p>
+              10. To allow access to certain payment methods, we use third party
+              providers that may also collect Personal Data. In this case, such
+              service providers are responsible for the collection and
+              processing of Data for the provision of the service. Please refer,
+              if necessary, to their own privacy policy.
+            </p>
+            <p>
+              11. All Personal Data used by these third parties is used solely
+              for the purposes of the services provided at our request. Any use
+              for other purposes is strictly prohibited. In addition, any
+              Personal Data processed by third parties will be in accordance
+              with the terms of this Privacy Policy and in compliance with the
+              GDPR. The third party providers we use will only collect, use and
+              disclose your information to the extent necessary to enable them
+              to perform the services they provide to us.
+            </p>
+            <p>
+              12. In certain circumstances and where required by law, we may
+              transmit your data to competent administrative or judicial
+              authorities or any other authorized third party.
+            </p>
+            <h3>LINKS TO OTHER WEBSITES</h3>
+            <p>
+              13. Our Website may, from time to time, provide links to other
+              websites. We have no control over such websites and we are not
+              responsible for their content. This Privacy Policy does not extend
+              to the use of such websites. We advise you to read the privacy
+              policy or charter applicable to such other websites before using
+              them.
+            </p>
+            <h3>YOUR RIGHTS REGARDING THE USE OF YOUR PERSONAL DATA</h3>
+            <p>
+              14. When you provide us with your Personal Data, you stay in
+              control of such Personal Data and have the option to limit their
+              use. This limitation may concern:
+            </p>
+            <p>
+              The use of Personal Data for direct marketing purposes, which are
+              subject to the opt-in rule; and The sharing of Personal Data with
+              third parties.
+            </p>
+            <p>
+              15. You have the right to request access to your Personal Data,
+              their rectification or erasure, as well as the right to request
+              the restriction of the processing or to object to the processing.
+            </p>
+            <p>
+              You also have the right to withdraw your consent at any time, in
+              particular to have your data no longer processed for the purpose
+              of marketing by electronic means.
+            </p>
+            <p>
+              You also have the right to request a copy, in an interoperable
+              format, of the Personal Data that you have provided to us.
+            </p>
+            <p>You can address your requests to: support@cypherock.com.</p>
+            <p>
+              Your requests must be accompanied by a copy of a proof of identity
+              and will be reviewed by our services as soon as possible.
+            </p>
+            <p>
+              For more information on how to access your Personal Data and to
+              exercise your rights, please contact us (see contact information
+              at the end of this Privacy Policy).
+            </p>
+            <h3>FUNCTIONALITY OF THE WEBSITE</h3>
+            <p>
+              16. In order to use all the resources and features available on
+              our Website, you may be required to transmit certain Personal Data
+              to us.
+            </p>
+            <p>17. You may restrict the use of Cookies in your Web browser.</p>
+            <h3>PERSONAL DATA SECURITY</h3>
+            <p>
+              18. Personal Data security is of great importance to Cypherock. In
+              order to protect your Personal Data, we have implemented
+              appropriate physical, electronic and organizational procedures to
+              safeguard and secure the Personal Data collected via our Website
+              in order to ensure its integrity and confidentiality.
+            </p>
+            <p>
+              19. If a password is required to access certain sections of our
+              Website, you are responsible for keeping this password
+              confidential.
+            </p>
+            <p>
+              20. We endeavor to do all we can to protect your Personal Data.
+              However, the transmission of information on the Internet is not
+              fully secure and remains under your sole responsibility. We cannot
+              ensure the security of the transmission of your Data to our
+              Website.
+            </p>
+            <p>
+              21. Payment Security: If you provide us with credit card
+              information, such information is encrypted using a secure Internet
+              Trade Protocol (TLS) and sent directly to our banking service
+              provider. This information is never stored on our server.
+            </p>
+            <h3>MISCELLANEOUS</h3>
+            <p>
+              24. If a court or competent authority considers that any provision
+              of this Privacy Policy (or any part thereof) is invalid, illegal
+              or unenforceable, that provision or relevant part of the provision
+              will, to the extent required, be deemed to be deleted. The
+              validity and enforceability of the other provisions of this
+              Privacy Policy will not be affected.
+            </p>
+            <p>
+              25. Unless otherwise agreed, no delay, act or omission by a party
+              in exercising a right or remedy will be deemed a waiver of such
+              right, or of another right or remedy.
+            </p>
+            <p>
+              26. This Privacy Policy will be governed by and interpreted
+              according to French law. Any dispute arising out of this Privacy
+              Policy will be subject to the exclusive jurisdiction of the French
+              courts.
+            </p>
+            <h3>OUR COMMITMENT TO YOUR PRIVACY</h3>
+            <p>
+              27. We can assure you that we comply with the GDPR and that we
+              process your Data lawfully, fairly and transparently.
+            </p>
+            <p>
+              We take confidentiality and privacy issues very seriously. We
+              therefore ensure that your personal information is secure; we
+              communicate our privacy and security guidelines and practices to
+              all our employees and service providers and strictly enforce
+              privacy safeguards within our company
+            </p>
+            <h3>CHANGES TO THIS PRIVACY POLICY</h3>
+            <p>
+              28. We reserve the right to make changes to this Privacy Policy as
+              we deem necessary from time to time or as may be required by law.
+              All changes will be posted immediately on our Website and you are
+              deemed to have accepted the new terms of the Privacy Policy when
+              you first use the Website after such changes.
+            </p>
+            <p>
+              29. If our company is the subject of a corporate transaction such
+              as an acquisition or merger with another company, your information
+              may be transferred to the new owners so that we can continue to
+              sell our products to you.
+            </p>
+            <p>
+              30. In the above cases, we will take steps to protect your
+              privacy.
+            </p>
+            <p>
+              Faucet Labs<br />
+              Kh.No. 485,<br />
+              Shahbad Daulatpur<br />
+              Landmark - Near Rana Pub School DELHI North,<br />
+              West,Delhi,India,110042
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container footer-container">
+        <div class="row footer-padding text-left">
+          <div class="col-md-6">
+            <img src="../static/img/logo-black.png" class="footer-logo" />
+          </div>
+          <div class="col-md-6">
+            <ul class="social_footer_ul">
+              <li>
+                <a href="https://www.facebook.com/cypherock/" target="_blank"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/CypherockWallet" target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://medium.com/cypherock" target="_blank"
+                  ><i class="fab fa-medium-m"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/company/cypherock"
+                  target="_blank"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://t.me/cypherock" target="_blank"
+                  ><i class="fab fa-telegram-plane"></i
+                ></a>
+              </li>
+              <li>
+                <a href="mailto:info@cypherock.com" target="_top"
+                  ><i class="fas fa-envelope"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="col-md-2 col-sm-6 col-xs-6 col-mb-6 col-lg-3 tablet-col-3 mx-auto d-flex flex-column"
+          >
+            <a href="/about">About</a>
+            <a href="/wallet">Hardware Wallet</a>
+            <a href="/backup">Crypto Backup</a>
+            <a href="/features">Features</a>
+          </div>
+
+          <div
+            class="col-md-2 col-sm-6 col-xs-6 col-mb-6 col-lg-3 tablet-col-3 mx-auto d-flex flex-column"
+          >
+            <a href="https://shop.cypherock.com" target="_blank">Blog</a>
+            <a href="/security">Security</a>
+            <a href="/faq">FAQ</a>
+            <a href="/privacypolicy">Privacy Policy</a>
+          </div>
+          <div class="col-md-2 col-lg-1 tablet-col-1"></div>
+          <div class="col-md-6 col-sm-12 col-xs-12 col-lg-5 tablet-col-5 mx-auto light-text">
+            <section class="newsletter">
+              <div class="container">
+                <div class="row">
+                  <div class="content">
+                    <div class="input-group">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="Email Address"
+                      />
+                      <span class="input-group-btn">
+                        <button
+                          class="btn"
+                          type="button"
+                          onclick="subs()"
+                          data-toggle="modal"
+                          data-target="#myModal3"
+                        >
+                          Subscribe
+                        </button>
+                      </span>
+                    </div>
+                    <p>
+                      Subscribe to our Newsletter. And don’t miss out on any
+                      updates from Cypherock.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <hr class="my-2" />
+          <div class="col-12">
+            <div class="container-fluid align-items-center text-center">
+              <p class="footer-bottom text-dark">
+                ©2020 CYPHEROCK, ALL RIGHTS RESERVED
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog my-auto">
+        <div class="modal-content">
+          <!-- Modal body -->
+          <div class="text-center sub-modal-body my-auto text-light">
+            Subscribed Successfully!
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+
+          <!-- Modal body -->
+          <div class="modal-body popup-notify">
+            <div class="row">
+              <div class="col-md-12 popup-xs-top">
+                <button type="button" class="close" data-dismiss="modal">
+                  &times;
+                </button>
+                <div class="text-center">
+                  <h4>Secure Your Crypto Like An Expert!</h4>
+                </div>
+              </div>
+
+              <div class="col-md-6" style="background: #ECDCC8">
+                <ul>
+                  <li>
+                    <h3>Free Beneficiary Service for 1 Year</h3>
+                  </li>
+                  <li>
+                    <h3>Be the first to know about</h3>
+                  </li>
+                  <li>
+                    <h3>Early Access to Offers & Premium Features</h3>
+                  </li>
+                  <li>
+                    <h3>Free updates on securing crypto</h3>
+                  </li>
+                  <li>
+                    <h3>50% Off On Cypherock X1</h3>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6" style="background: #E6E6E6">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="email"
+                    class="form-control"
+                    placeholder="Email"
+                  />
+                  <button type="button" onclick="subs()" class="btn btn-orange">
+                    Join Now!
+                  </button>
+                </div>
+                <p>
+                  *By completing this form you agree to receive mails from
+                  Cypherock
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal footer -->
+        </div>
+      </div>
+    </div>
+    <div class="navbar1" id="#cookie_directive_container">
+      We use cookies to enhance your experience. By continuing to visit this
+      site you agree to our use of cookies.<a
+        href="https://aboutcookies.org/"
+        target="_blank"
+        >Learn more</a
+      >
+      <i onclick="close()" id="banner-close" class="fa fa-times"></i>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="../js/owl.carousel.min.js"></script>
+  <script src="../js/custom.js"></script>
+  <script>
+    $('.ramu').css('margin-top', 80)
+  </script>
+  <script>
+    ;(function ($) {
+      'use strict'
+
+      $(window).on('load', function () {
+        $('body').addClass('loaded')
+      })
+
+      $(function () {
+        var header = $('#header'),
+          yOffset = 0,
+          triggerPoint = 80
+        $(window).on('scroll', function () {
+          yOffset = $(window).scrollTop()
+
+          if (yOffset >= triggerPoint) {
+            header.addClass('navbar-fixed')
+          } else {
+            header.removeClass('navbar-fixed')
+          }
+        })
+      })
+    })(jQuery)
+  </script>
+</html>

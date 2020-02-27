@@ -1,0 +1,244 @@
+2020-01-22 16:09:18.233 INFO  server started at port 5000 webhook test 4 
+2020-01-23 13:55:42.937 INFO  server started at port 5000 webhook test 4 
+2020-01-23 18:52:09.287 INFO  server started at port 5000 webhook test 4 
+2020-01-23 18:52:38.500 ERROR http://localhost:5000 
+2020-01-23 18:52:38.516 ERROR Invalid value "undefined" for header "Authorization"
+{}
+TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:485:3)
+    at new ClientRequest (_http_client.js:206:14)
+    at Object.request (https.js:303:10)
+    at RedirectableRequest._performRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:169:24)
+    at new RedirectableRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:66:8)
+    at Object.wrappedProtocol.request (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:307:14)
+    at dispatchHttpRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/adapters/http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/adapters/http.js:21:10)
+    at dispatchRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/core/dispatchRequest.js:52:10) 
+2020-01-23 18:52:38.516 INFO   
+2020-01-23 18:52:39.242 ERROR http://localhost:5000 
+2020-01-23 18:52:39.245 ERROR Invalid value "undefined" for header "Authorization"
+{}
+TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:485:3)
+    at new ClientRequest (_http_client.js:206:14)
+    at Object.request (https.js:303:10)
+    at RedirectableRequest._performRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:169:24)
+    at new RedirectableRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:66:8)
+    at Object.wrappedProtocol.request (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:307:14)
+    at dispatchHttpRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/adapters/http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/adapters/http.js:21:10)
+    at dispatchRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/core/dispatchRequest.js:52:10) 
+2020-01-23 18:52:39.245 INFO   
+2020-01-23 18:52:39.459 ERROR http://localhost:5000 
+2020-01-23 18:52:39.461 ERROR Invalid value "undefined" for header "Authorization"
+{}
+TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:485:3)
+    at new ClientRequest (_http_client.js:206:14)
+    at Object.request (https.js:303:10)
+    at RedirectableRequest._performRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:169:24)
+    at new RedirectableRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:66:8)
+    at Object.wrappedProtocol.request (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:307:14)
+    at dispatchHttpRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/adapters/http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/adapters/http.js:21:10)
+    at dispatchRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/core/dispatchRequest.js:52:10) 
+2020-01-23 18:52:39.461 INFO   
+2020-01-23 18:52:42.157 ERROR http://localhost:5000 
+2020-01-23 18:52:42.159 ERROR Invalid value "undefined" for header "Authorization"
+{}
+TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:485:3)
+    at new ClientRequest (_http_client.js:206:14)
+    at Object.request (https.js:303:10)
+    at RedirectableRequest._performRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:169:24)
+    at new RedirectableRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:66:8)
+    at Object.wrappedProtocol.request (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:307:14)
+    at dispatchHttpRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/adapters/http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/adapters/http.js:21:10)
+    at dispatchRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/core/dispatchRequest.js:52:10) 
+2020-01-23 18:52:42.159 INFO  ramkashyap2@gmail.com 
+2020-01-23 18:52:42.620 ERROR http://localhost:5000 
+2020-01-23 18:52:42.623 ERROR Invalid value "undefined" for header "Authorization"
+{}
+TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:485:3)
+    at new ClientRequest (_http_client.js:206:14)
+    at Object.request (https.js:303:10)
+    at RedirectableRequest._performRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:169:24)
+    at new RedirectableRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:66:8)
+    at Object.wrappedProtocol.request (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:307:14)
+    at dispatchHttpRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/adapters/http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/adapters/http.js:21:10)
+    at dispatchRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/core/dispatchRequest.js:52:10) 
+2020-01-23 18:52:42.623 INFO  ramkashyap2@gmail.com 
+2020-01-23 18:52:42.801 ERROR http://localhost:5000 
+2020-01-23 18:52:42.804 ERROR Invalid value "undefined" for header "Authorization"
+{}
+TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:485:3)
+    at new ClientRequest (_http_client.js:206:14)
+    at Object.request (https.js:303:10)
+    at RedirectableRequest._performRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:169:24)
+    at new RedirectableRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:66:8)
+    at Object.wrappedProtocol.request (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:307:14)
+    at dispatchHttpRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/adapters/http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/adapters/http.js:21:10)
+    at dispatchRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/core/dispatchRequest.js:52:10) 
+2020-01-23 18:52:42.804 INFO  ramkashyap2@gmail.com 
+2020-01-23 18:52:42.969 ERROR http://localhost:5000 
+2020-01-23 18:52:42.972 ERROR Invalid value "undefined" for header "Authorization"
+{}
+TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:485:3)
+    at new ClientRequest (_http_client.js:206:14)
+    at Object.request (https.js:303:10)
+    at RedirectableRequest._performRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:169:24)
+    at new RedirectableRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:66:8)
+    at Object.wrappedProtocol.request (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:307:14)
+    at dispatchHttpRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/adapters/http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/adapters/http.js:21:10)
+    at dispatchRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/core/dispatchRequest.js:52:10) 
+2020-01-23 18:52:42.972 INFO  ramkashyap2@gmail.com 
+2020-01-23 18:52:43.153 ERROR http://localhost:5000 
+2020-01-23 18:52:43.156 ERROR Invalid value "undefined" for header "Authorization"
+{}
+TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:485:3)
+    at new ClientRequest (_http_client.js:206:14)
+    at Object.request (https.js:303:10)
+    at RedirectableRequest._performRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:169:24)
+    at new RedirectableRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:66:8)
+    at Object.wrappedProtocol.request (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:307:14)
+    at dispatchHttpRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/adapters/http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/adapters/http.js:21:10)
+    at dispatchRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/core/dispatchRequest.js:52:10) 
+2020-01-23 18:52:43.156 INFO  ramkashyap2@gmail.com 
+2020-01-23 18:52:43.450 ERROR http://localhost:5000 
+2020-01-23 18:52:43.452 ERROR Invalid value "undefined" for header "Authorization"
+{}
+TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:485:3)
+    at new ClientRequest (_http_client.js:206:14)
+    at Object.request (https.js:303:10)
+    at RedirectableRequest._performRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:169:24)
+    at new RedirectableRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:66:8)
+    at Object.wrappedProtocol.request (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:307:14)
+    at dispatchHttpRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/adapters/http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/adapters/http.js:21:10)
+    at dispatchRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/core/dispatchRequest.js:52:10) 
+2020-01-23 18:52:43.452 INFO  ramkashyap2@gmail.com 
+2020-01-23 18:52:47.658 ERROR http://localhost:5000 
+2020-01-23 18:52:47.661 ERROR Invalid value "undefined" for header "Authorization"
+{}
+TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:485:3)
+    at new ClientRequest (_http_client.js:206:14)
+    at Object.request (https.js:303:10)
+    at RedirectableRequest._performRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:169:24)
+    at new RedirectableRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:66:8)
+    at Object.wrappedProtocol.request (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:307:14)
+    at dispatchHttpRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/adapters/http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/adapters/http.js:21:10)
+    at dispatchRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/core/dispatchRequest.js:52:10) 
+2020-01-23 18:52:47.661 INFO   
+2020-01-23 18:53:19.786 ERROR http://localhost:5000 
+2020-01-23 18:53:19.789 ERROR Invalid value "undefined" for header "Authorization"
+{}
+TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:485:3)
+    at new ClientRequest (_http_client.js:206:14)
+    at Object.request (https.js:303:10)
+    at RedirectableRequest._performRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:169:24)
+    at new RedirectableRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:66:8)
+    at Object.wrappedProtocol.request (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:307:14)
+    at dispatchHttpRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/adapters/http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/adapters/http.js:21:10)
+    at dispatchRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/core/dispatchRequest.js:52:10) 
+2020-01-23 18:53:19.789 INFO   
+2020-01-23 18:53:20.247 ERROR http://localhost:5000 
+2020-01-23 18:53:20.250 ERROR Invalid value "undefined" for header "Authorization"
+{}
+TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:485:3)
+    at new ClientRequest (_http_client.js:206:14)
+    at Object.request (https.js:303:10)
+    at RedirectableRequest._performRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:169:24)
+    at new RedirectableRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:66:8)
+    at Object.wrappedProtocol.request (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:307:14)
+    at dispatchHttpRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/adapters/http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/adapters/http.js:21:10)
+    at dispatchRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/core/dispatchRequest.js:52:10) 
+2020-01-23 18:53:20.250 INFO   
+2020-01-23 18:53:20.470 ERROR http://localhost:5000 
+2020-01-23 18:53:20.473 ERROR Invalid value "undefined" for header "Authorization"
+{}
+TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:485:3)
+    at new ClientRequest (_http_client.js:206:14)
+    at Object.request (https.js:303:10)
+    at RedirectableRequest._performRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:169:24)
+    at new RedirectableRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:66:8)
+    at Object.wrappedProtocol.request (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:307:14)
+    at dispatchHttpRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/adapters/http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/adapters/http.js:21:10)
+    at dispatchRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/core/dispatchRequest.js:52:10) 
+2020-01-23 18:53:20.473 INFO   
+2020-01-23 18:53:21.706 ERROR http://localhost:5000 
+2020-01-23 18:53:21.707 ERROR Invalid value "undefined" for header "Authorization"
+{}
+TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:485:3)
+    at new ClientRequest (_http_client.js:206:14)
+    at Object.request (https.js:303:10)
+    at RedirectableRequest._performRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:169:24)
+    at new RedirectableRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:66:8)
+    at Object.wrappedProtocol.request (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:307:14)
+    at dispatchHttpRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/adapters/http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/adapters/http.js:21:10)
+    at dispatchRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/core/dispatchRequest.js:52:10) 
+2020-01-23 18:53:21.707 INFO   
+2020-01-23 18:53:22.103 ERROR http://localhost:5000 
+2020-01-23 18:53:22.105 ERROR Invalid value "undefined" for header "Authorization"
+{}
+TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:485:3)
+    at new ClientRequest (_http_client.js:206:14)
+    at Object.request (https.js:303:10)
+    at RedirectableRequest._performRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:169:24)
+    at new RedirectableRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:66:8)
+    at Object.wrappedProtocol.request (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:307:14)
+    at dispatchHttpRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/adapters/http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/adapters/http.js:21:10)
+    at dispatchRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/core/dispatchRequest.js:52:10) 
+2020-01-23 18:53:22.105 INFO   
+2020-01-23 18:53:22.658 ERROR http://localhost:5000 
+2020-01-23 18:53:22.660 ERROR Invalid value "undefined" for header "Authorization"
+{}
+TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:485:3)
+    at new ClientRequest (_http_client.js:206:14)
+    at Object.request (https.js:303:10)
+    at RedirectableRequest._performRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:169:24)
+    at new RedirectableRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:66:8)
+    at Object.wrappedProtocol.request (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/follow-redirects/index.js:307:14)
+    at dispatchHttpRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/adapters/http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/adapters/http.js:21:10)
+    at dispatchRequest (/Users/newuser/Desktop/New-Cypherock-Website-1/node_modules/axios/lib/core/dispatchRequest.js:52:10) 
+2020-01-23 18:53:22.660 INFO   
+2020-01-24 11:41:40.504 INFO  server started at port 5000 webhook test 4 

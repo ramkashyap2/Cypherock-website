@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Cypherock - Next-Gen Hardware Wallet With Key Recovery & Backup</title>
+			
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+		integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+		<link rel="shortcut icon" href="../static/img/favicon.png" />
+			<link href="../css/index.css" rel="stylesheet">
+			<link href="../css/features.css" rel="stylesheet">
+			<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+					new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+					j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+					'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+					})(window,document,'script','dataLayer','GTM-KWPLJ84');</script>
+					<!-- End Google Tag Manager -->
+			<style>
+				.lead {
+				margin-top: 50px;
+				margin-bottom: 80px;
+				}
+				@media (max-width: 576px) { 
+					.lead {
+				margin-top: 20px;
+				margin-bottom: 20px;
+				}
+				}
+			</style>
+				<script>
+					(function (h, o, t, j, a, r) {
+						h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+						h._hjSettings = { hjid: 1631139, hjsv: 6 };
+						a = o.getElementsByTagName('head')[0];
+						r = o.createElement('script'); r.async = 1;
+						r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+						a.appendChild(r);
+					})(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+				</script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"
+					integrity="sha256-S1J4GVHHDMiirir9qsXWc8ZWw74PHHafpsHp5PXtjTs=" crossorigin="anonymous"></script>
+		</head>
+		<body data-spy="scroll" data-target="#navbar" data-offset="60" oncontextmenu="return false;">
+			<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KWPLJ84"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<header id="header" class="header_section sticky-top">
+		<nav class="navbar navbar-expand-lg  navbar-light ">
+			<div class="container navbar-container">
+				<a href="/" class="navbar-brand">
+					<img src="../static/img/logo.png">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+	
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto topnav">
+						<li class="nav-item active">
+							<a href="/about" class="nav-link"> <span class="sr-only">(current)</span>About</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Applications <i><img src="../static/img/Arrow.png"></i>
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="/wallet">Hardware Wallet</a>
+								<a class="dropdown-item" href="/backup">Crypto Backup</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a href="/features" class="nav-link">Features</a>
+						</li>
+						<li class="nav-item">
+							<a href="https://medium.com/cypherock" target="_blank" class="nav-link">Blog</a>
+						</li>
+						<li class="nav-item">
+							<a href="/security" class="nav-link">Security</a>
+						</li>
+						<li class="nav-item">
+							<a href="/faq" class="nav-link">FAQ</a>
+						</li>
+	
+	
+						<li class="nav-item">
+							<a href="https://shop.cypherock.com" type="button"
+								class="btn btn-outline-warning btn-md mx-auto " target=”_blank”>
+								Pre Order
+							</a>
+						</li>
+					</ul>
+				</div>
+	
+			</div>
+		</nav>
+	</header>
+			
+
+		<!-- screen 1 ---->
+
+			<div class="container-fluid screen-1">
+				<div class="container">
+					<div class="row pt-300">
+						<div class="col-md-12 col-sm-6 col-xs-12 text-left light-text heading-bx left">
+							<p class="title-head text-light"><strong>Our Features</strong></p>
+						</div>
+					</div>
+				</div>	
+			</div>
+
+		<!-- feature - 1 ---->
+
+		<div class="feature-1-screen" id="feature-wallet" name="feature-wallet">
+			<div class="container feature-1-container">
+				<div class="row feature-div" >
+				<!-- Feature 1- ----->
+					<div class="col-md-4 col-sm-12 col-xs-12 my-auto">
+						<div class="feature-img">
+							<img src="../static/img/bg-index-screen1.svg">
+						</div>
+					</div>
+
+					<div class="col-md-1 col-sm-0 col-xs-0 xs-hide" >
+						<br><br>
+					</div>
+
+					<div class="col-md-7 col-sm-12 col-xs-12 text-left light-text" >
+						<h2>
+							<strong>
+								Multiple Wallets Storage
+							</strong>
+						</h2>
+						<p class="lead">
+							Unlike other hardware wallets where you get one wallet per hardware, 
+							you can create 3 different wallets in a single Cypherock X1. What that means 
+							is, you can secure seed phrases or make transactions through upto 3 different 
+							wallets in a single device.
+						</p>
+						
+						<hr class="hr-orange mr-5" align="left">
+					</div>
+
+					<div class="col-md-12 col-sm-0 col-xs-0 xs-hide" id="feature-distributed" name="feature-distributed">
+						<br><br>
+					</div>
+
+				<!-- Feature 2 ------->
+					<div class="col-md-4 col-sm-12 col-xs-12 align-items-center md-hide">
+							<div class="feature-img">
+									<img src="../static/img/feature/feature-distributed.svg">
+								</div>
+					</div>
+					<div class="col-md-7 col-sm-12 col-xs-12 text-left light-text" >
+						<h2>
+							<strong>
+								Distributed Architecture
+							</strong>
+						</h2>
+						<p class="lead">
+							Shamir Secret Sharing Algorithm allows the distribution of private keys 
+							such that it does not have a single point of failure. Even if a hacker gets a 
+							hold of one of the cards, it is not possible for him to extract the private keys 
+							since atleast 2 cards are needed. Also, even if 2 cards are lost, you can still 
+							recover your private keys from the remaining two cards. Due to its distributed architecture, 
+							it has similar security properties as that of multisig wallets.
+						</p>
+						
+						<hr class="hr-orange mr-5" align="left">
+					</div>
+
+					<div class="col-md-1 col-sm-0 col-xs-0 xs-hide">
+						<br><br>
+					</div>
+
+					<div class="col-md-4 col-sm-12 col-xs-12 align-items-center xs-hide" >
+							<div class="feature-img">
+									<img src="../static/img/feature/feature-distributed.svg">
+								</div>
+					</div>
+
+					<div class="col-md-12 col-sm-0 col-xs-0 xs-hide" id="feature-isolated" name="feature-isolated">
+						<br><br>
+					</div>
+
+				<!-- Feature 3- ----->
+
+					<div class="col-md-4 col-sm-12 col-xs-12 align-items-center">
+							<div class="feature-img">
+									<img src="../static/img/feature/feature-isolated.svg">
+								</div>
+					</div>
+
+					<div class="col-md-1 col-sm-0 col-xs-0 xs-hide">
+						<br><br>
+					</div>
+
+					<div class="col-md-7 col-sm-12 col-xs-12 text-left light-text">
+						<h2>
+							<strong>
+								Isolated & Cold Storage
+							</strong>
+						</h2>
+						<p class="lead">
+							The Cycards offer cold storage of private keys which never 
+							even needs connection to an internet connected device. The private 
+							keys are stored completely offline, that too never in a single place. 
+							Even if two of the cards are corrupted or lost due to an environmental 
+							hazard like fire, earthquake or a cyclone, even then you can recover your assets 
+							from the remaining two cards. Hence the architecture is secure and environment proof.
+						</p>
+						
+						<hr class="hr-orange mr-5" align="left">
+					</div>
+
+					<div class="col-md-12 col-sm-0 col-xs-0 xs-hide" id="feature-hardware" name="feature-hardware">
+						<br><br>
+					</div>
+
+				<!-- Feature 4 ------->
+				<div class="col-md-4 col-sm-12 col-xs-12 align-items-center md-hide">
+						<div class="feature-img">
+								<img src="../static/img/feature/feature-hardware.svg">
+							</div>
+				</div>
+					<div class="col-md-7 col-sm-12 col-xs-12 text-left light-text">
+						<h2>
+							<strong>
+								Robust Hardware Security
+							</strong>
+						</h2>
+						<p class="lead">
+							The private keys are broken down into 4 unique keys, 
+							each of which is then encrypted using the password and stored into EAL 
+							6+ secure element on the cyCard. EAL 6+ security is the highest grade 
+							security available today for consumers. Only the most recent debit and 
+							credit cards offer that level of security. Even the most secure hardware 
+							wallets today use EAL 5+ secure elements in their product.
+						</p>
+						
+						<hr class="hr-orange mr-5" align="left">
+					</div>
+
+					<div class="col-md-1 col-sm-0 col-xs-0 xs-hide">
+						<br><br>
+					</div>
+
+					<div class="col-md-4 col-sm-12 col-xs-12 align-items-center xs-hide">
+							<div class="feature-img">
+									<img src="../static/img/feature/feature-hardware.svg">
+								</div>
+					</div>
+
+					<div class="col-md-12 col-sm-0 col-xs-0 xs-hide" id="feature-currency" name="feature-currency">
+						<br><br>
+					</div>
+				
+				<!-- Feature 5- ----->
+
+					<div class="col-md-4 col-sm-12 col-xs-12 align-items-center">
+							<div class="feature-img">
+									<img src="../static/img/feature/feature-currency.svg">
+								</div>
+					</div>
+
+					<div class="col-md-1 col-sm-0 col-xs-0 xs-hide">
+						<br><br>
+					</div>
+
+					<div class="col-md-7 col-sm-12 col-xs-12 text-left light-text">
+						<h2>
+							<strong>
+								Multi Currency Support
+							</strong>
+						</h2>
+						<p class="lead">
+							Cypherock X1 has the provision to store more than 20+ Cryptocurrencies 
+							in the first version with the ability to add support for all the Blockchains in due time. 
+							It offers battle tested security for all the Blockchains which is not the case for multisig 
+							wallets today due to its non-standard implementation across the Blockchains.
+						</p>
+						
+						<hr class="hr-orange mr-5" align="left">
+					</div>
+
+					<div class="col-md-12 col-sm-0 col-xs-0 xs-hide" id="feature-security" name="feature-security">
+						<br><br>
+					</div>
+
+				<!-- Feature 6 ------->
+				<div class="col-md-4 col-sm-12 col-xs-12 align-items-center md-hide">
+						<div class="feature-img">
+								<img src="../static/img/feature/feature-security.svg">
+							</div>
+						</div>
+					<div class="col-md-7 col-sm-12 col-xs-12 text-left light-text">
+						<h2>
+							<strong>
+								Multi-Layered Security
+							</strong>
+						</h2>
+						<p class="lead">
+							Cypherock X1 has 3 layers of security for the safety of your private keys. 
+							The bottom most layer is the Shamir Secret Sharing Algorithm. It allows you to 
+							construct the Private Key From Any 2 out of 4 cyCards. The 2nd layer is an 
+							optional password encryption on top of each card that guards each secret. 
+							It helps against brute force attacks on the cards. The topmost layer is the 
+							physical separation of cards in remote geographical locations that exponentially 
+							increases security of the assets.
+						</p>
+						
+						<hr class="hr-orange mr-5" align="left">
+					</div>
+
+					<div class="col-md-1 col-sm-0 col-xs-0 xs-hide">
+						<br><br>
+					</div>
+
+					<div class="col-md-4 col-sm-12 col-xs-12 align-items-center xs-hide">
+						<div class="feature-img">
+								<img src="../static/img/feature/feature-security.svg">
+							</div>
+						</div>
+
+					<div class="col-md-12 col-sm-0 col-xs-0 xs-hide bottom">
+						<br><br>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer>
+			<div class="container footer-container">
+				<div class="row footer-padding text-left">
+					<div class="col-md-6">
+						<img src="../static/img/logo-black.png" class="footer-logo">
+					</div>
+					<div class="col-md-6">
+						<ul class="social_footer_ul">
+							<li><a href="https://www.facebook.com/cypherock/" target="_blank"><i
+										class="fab fa-facebook-f"></i></a></li>
+							<li><a href="https://twitter.com/CypherockWallet" target="_blank"><i class="fab fa-twitter"></i></a>
+							</li>
+							<li><a href="https://medium.com/cypherock" target="_blank"><i class="fab fa-medium-m"></i></a>
+							</li>
+							<li><a href="https://www.linkedin.com/company/cypherock" target="_blank"><i
+										class="fab fa-linkedin-in"></i></a></li>
+							<li><a href="https://t.me/cypherock" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+							</li>
+							<li><a href="mailto:info@cypherock.com" target="_top"><i class="fas fa-envelope"></i></a></li>
+		
+						</ul>
+					</div>
+					<div class="col-md-2 col-sm-6 col-xs-6 col-lg-3 col-mb-6 tablet-col-3 mx-auto d-flex flex-column">
+						<a href="/about">About</a>
+						<a href="/wallet">Hardware Wallet</a>
+						<a href="/backup">Crypto Backup</a>
+						<a href="/features">Features</a>
+					</div>
+		
+					<div class="col-md-2 col-sm-6 col-xs-6 col-lg-3 col-mb-6 tablet-col-3 mx-auto d-flex flex-column">
+						<a href="https://shop.cypherock.com" target="_blank">Blog</a>
+						<a href="/security">Security</a>
+						<a href="/faq">FAQ</a>
+						<a href="/privacypolicy">Privacy Policy</a>
+		
+					</div>
+					<div class="col-md-2 col-lg-1 tablet-col-1"></div>
+					<div class="col-md-6 col-sm-12 col-xs-12 col-lg-5 tablet-col-5 mx-auto light-text">
+						<section class="newsletter">
+							<div class="container">
+								<div class="row">
+									<div class="content">
+										<div class="input-group">
+											<input type="email" class="form-control" id='email' required='true'
+												placeholder="Email Address">
+											<span class="input-group-btn">
+												<button class="btn" type="button" onclick="subs()">Subscribe</button>
+											</span>
+										</div>
+										<p>Subscribe to our Newsletter. And don’t miss out on any updates from Cypherock.
+										</p>
+		
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+					<hr class="my-2">
+					<div class="col-12">
+						<div class="container-fluid align-items-center text-center">
+							<p class="footer-bottom text-dark">©2020 CYPHEROCK, ALL RIGHTS RESERVED</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	<!-- The Modal -->
+<div class="modal fade" id="myModal">
+	<div class="modal-dialog my-auto">
+		<div class="modal-content">
+			<!-- Modal body -->
+			<div class="text-center sub-modal-body my-auto text-light">
+				Subscribed Successfully!
+			</div>
+		</div>
+	</div>
+</div>
+	<!-- The Modal -->
+	<div class="modal fade" id="myModal1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<!-- Modal Header -->
+
+
+				<!-- Modal body -->
+				<div class="modal-body popup-notify">
+					<div class="row">
+						<div class="col-md-12 popup-xs-top">
+
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<div class="text-center">
+								<h4>Secure Your Crypto Like An Expert!</h4>
+							</div>
+						</div>
+
+						<div class="col-md-6" style="background: #ECDCC8">
+							<ul>
+								<li>
+									<h3>Free Beneficiary Service for 1 Year</h3>
+								</li>
+								<li>
+									<h3>Be the first to know about </h3>
+								</li>
+								<li>
+									<h3>Early Access to Offers & Premium Features</h3>
+								</li>
+								<li>
+									<h3>Free updates on securing crypto</h3>
+								</li>
+								<li>
+									<h3>50% Off On Cypherock X1</h3>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-6" style="background: #E6E6E6">
+							<div class="form-group">
+								<input type="text" id="email" class="form-control" placeholder="Email">
+								<button type="button" onclick="subs()"  class="btn btn-orange">Join Now!</button>
+							</div>
+							<p>*By completing this form you agree to receive mails from Cypherock</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Modal footer -->
+
+
+			</div>
+		</div>
+	</div>
+	<div class="navbar1" id="#cookie_directive_container">
+		We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.<a
+			href="https://aboutcookies.org/" target="_blank">Learn more</a>
+		<i onclick="close()" id="banner-close" class="fa fa-times"></i>
+	</div>
+	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="../js/custom.js"></script>
+<script>
+	(function ($) {
+		"use strict";
+
+		$(window).on('load', function () {
+			$('body').addClass('loaded');
+		});
+
+		$(function () {
+			var header = $("#header"),
+				yOffset = 0,
+				triggerPoint = 80;
+			$(window).on('scroll', function () {
+				yOffset = $(window).scrollTop();
+
+				if (yOffset >= triggerPoint) {
+					header.addClass("navbar-fixed");
+				} else {
+					header.removeClass("navbar-fixed");
+				}
+			});
+		});
+	})(jQuery);
+</script>
+</html>

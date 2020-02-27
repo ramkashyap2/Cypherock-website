@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Cypherock - Next-Gen Hardware Wallet With Key Recovery & Backup</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+		integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link rel="shortcut icon" href="../static/img/favicon.png" />
+	<link href="../css/index.css" rel="stylesheet">
+	<link href="../css/wiki.css" rel="stylesheet">
+	<!-- Google Tag Manager -->
+	<script>
+		(function (w, d, s, l, i) {
+			w[l] = w[l] || [];
+			w[l].push({
+				'gtm.start': new Date().getTime(),
+				event: 'gtm.js'
+			});
+			var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s),
+				dl = l != 'dataLayer' ? '&l=' + l : '';
+			j.async = true;
+			j.src =
+				'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+			f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-KWPLJ84');
+	</script>
+	<!-- End Google Tag Manager -->
+	<script>
+		(function (h, o, t, j, a, r) {
+			h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+			h._hjSettings = { hjid: 1631139, hjsv: 6 };
+			a = o.getElementsByTagName('head')[0];
+			r = o.createElement('script'); r.async = 1;
+			r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+			a.appendChild(r);
+		})(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"
+		integrity="sha256-S1J4GVHHDMiirir9qsXWc8ZWw74PHHafpsHp5PXtjTs=" crossorigin="anonymous"></script>
+</head>
+
+<body data-spy="scroll" data-target="#navbar" data-offset="60" oncontextmenu="return false;">
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KWPLJ84" height="0" width="0"
+			style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	
+	<header id="header" class="header_section sticky-top">
+		<nav class="navbar navbar-expand-lg  navbar-light ">
+			<div class="container navbar-container">
+				<a href="/" class="navbar-brand">
+					<img src="../static/img/logo.png">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+	
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto topnav">
+						<li class="nav-item active">
+							<a href="/about" class="nav-link"> <span class="sr-only">(current)</span>About</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Applications <i><img src="../static/img/Arrow.png"></i>
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="/wallet">Hardware Wallet</a>
+								<a class="dropdown-item" href="/backup">Crypto Backup</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a href="/features" class="nav-link">Features</a>
+						</li>
+						<li class="nav-item">
+							<a href="https://medium.com/cypherock" target="_blank" class="nav-link">Blog</a>
+						</li>
+						<li class="nav-item">
+							<a href="/security" class="nav-link">Security</a>
+						</li>
+						<li class="nav-item">
+							<a href="/faq" class="nav-link">FAQ</a>
+						</li>
+	
+	
+						<li class="nav-item">
+							<a href="https://shop.cypherock.com" type="button"
+								class="btn btn-outline-warning btn-md mx-auto " target=”_blank”>
+								Pre Order
+							</a>
+						</li>
+					</ul>
+				</div>
+	
+			</div>
+		</nav>
+	</header>
+	<div class="height-82"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="wiki wiki-sutitle">
+					<h2>Contents</h2>
+					<p><a data-scroll href="#Remote"> Remote Attack </a></p>
+					<p><a data-scroll href="#Physical"> Physical Attack</a></p>
+					<ul>
+						<li>Supply chain attack</li>
+						<li>Evil maid attack</li>
+						<li>Side channel Analysis</li>
+						<li>PIN bruteforce attack</li>
+						<li>Flashing malicious firmware</li>
+						<li>$5 wrench attack</li>
+					</ul>
+					<!-- <p><a data-scroll href="#Evil">Evil maid attack</a></p>
+					<p><a href="#Side">Side channel Analysis</a></p>
+					<p><a href="#Pin">PIN bruteforce attack</a></p>
+					<p><a href="#Flashing">Flashing malicious firmware</a></p>
+					<p><a href="#Wrench">5$ wrench attack</a></p> -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="wiki">
+					<p>
+						<span>Security</span> is the most important thing for the user when it comes to hardware wallets. The attacks
+						possible on a hardware wallet can be broadly classified into :<br>
+						1) Remote Attack<br>
+						2) Physical Attacks
+
+					</p>
+					<h3>
+						So how can an attack be classified as a Remote Attack or a Physical Attack?
+					</h3>
+					<h2>Remote Attack</h2>
+					<p>
+						The term remote means attacks where the attacker doesn't have physical possession of the device.
+						A remote attacker can manipulate data sent to the hardware wallet or control a device that the
+						wallet communicates with. This creates limits on what the attacker can do. If the wallet
+						connects to a computer over USB, the attacker needs to find and exploit a bug in the device’s
+						USB software stack or application layer usage.
+					</p>
+					<p>
+						Remote attackers are limited in what software/hardware they can look for vulnerabilities in
+						because they can only see exposed external interfaces. With great sophistication, the attackers
+						are still limited and hence it is much easier to protect code execution and use of internal
+						device secrets because there is less software and hardware exposed to attacks.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="row bottom" id="Physical">
+			<div class="col-md-12">
+				<div class="wiki">
+					<h2>Physical Attack</h2>
+					<p>
+						The hardest challenge for wallets is protecting secrets from an attacker that has physical
+						access to the device. This type of attacker can steal your device from you on the street or from
+						your house when you are gone. They can modify your device hardware or firmware without your
+						knowledge. Physical attackers have unlimited attack vectors.
+					</p>
+					<p>
+						Every kind of security can be defeated by a physical attacker if the attacker has enough time
+						and money. As an example, hardware security labs have the ability to completely reverse engineer
+						the silicon chip or a Government in power can force the manufacturer to turn over the design
+						files. After a chip's internal design has been fully recovered, a lab can very effectively
+						target specific areas on the chip using a laser to induce changes in memory or logic. The memory
+						state change can cause the chip to not check critical security parameters before running some
+						operation.
+					</p>
+					<h3>
+						Keeping both the Remote and Physical attack vectors in perspective, Cypherock X1 seeks to
+						protect your seed phrase and conduct secure transaction signing. Even if a hacker steals your X1
+						wallet, it is impossible to extract your private keys from the device. Further our unique design
+						ensures that your assets are safe from all known attacks as explained below.
+					</h3>
+					<ul>
+						<li>Supply chain attack
+							<p>The X1 wallet comes preloaded with a non replaceable bootloader. On first boot, the
+								device instructs the user to download the desktop application from Cypherock’s website.
+								When the X1 wallet detects the application, user can verify their new device securely.
+								Every X1 wallet and cyCard could be uniquely verified by our server using 256 bit
+								elliptic curve digital signature algorithm. Once the X1 wallet gets verified through the
+								desktop app, user can download the latest signed firmware into the device.
+							</p>
+						</li>
+						<li id="Evil">Evil maid attack
+							<p>
+								Evil maid attack happens when a hacker gets physical access to an unattended device and
+								alters
+								it in some undetectable way, so that the hacker can access it remotely access it later.
+								Let’s assume, if the X1 wallet is embedded with a wireless transmitter, the compromised
+								X1
+								wallet could transmit any PIN it received. To prevent that happening user is instructed
+								to
+								verify the X1 wallet on every boot. Every wallet and card has a serial number and a
+								unique 256
+								bit private key.
+							</p>
+						</li>
+						<li id="Side">Side channel Analysis
+							<p>
+								X1 does not store any private information like wallet seed, PIN or PIN attempt counter
+								etc.
+								Hence there is no useful data to extract or glitch upon. PIN authentication takes place
+								inside
+								the EAL 6+ secure element on cyCard.
+							</p>
+						</li>
+						<li id="Pin">PIN bruteforce attack
+							<p>
+								It is important to note that PIN authentication takes place inside the cyCard. Every
+								time a
+								wrong PIN is entered, the waiting time between the attempts increases exponentially.
+							</p>
+						</li>
+						<li id="Flashing">Flashing malicious firmware
+							<p>
+								Official firmware is signed by the Cypherock master key. Installing unofficial firmware
+								is not
+								possible on genuine X1 wallet since wallet comes preloaded with a secure bootloader.
+							</p>
+						</li>
+						<li id="Wrench">$5 wrench attack
+							<p>
+								A $5 wrench attack occurs when an attacker physically threatens you using a deadly
+								weapon to
+								hand over your private keys or send over the funds.
+							</p>
+						</li>
+						<p>
+							For maximum security, it is recommended to store cyCard at different locations. This
+							increases the time required to get access to the keys and in turn increases the risk for the
+							attacker. Further you can maintain multiple wallets in single Cypherock X1, one of which can
+							be used as a dummy wallet for which the keys can be handed over.
+						</p>
+						</li>
+					</ul>
+					<p>Combination of Cypherock X1 and cyCard is the first such attempt to decouple storage and
+						computation aspect of a hardware wallet. It is one of the most unique and secure methods to
+						ensure the safety of Crypto assets.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container footer-container">
+			<div class="row footer-padding text-left">
+				<div class="col-md-6">
+					<img src="../static/img/logo-black.png" class="footer-logo">
+				</div>
+				<div class="col-md-6">
+					<ul class="social_footer_ul">
+						<li><a href="https://www.facebook.com/cypherock/" target="_blank"><i
+									class="fab fa-facebook-f"></i></a></li>
+						<li><a href="https://twitter.com/CypherockWallet" target="_blank"><i class="fab fa-twitter"></i></a>
+						</li>
+						<li><a href="https://medium.com/cypherock" target="_blank"><i class="fab fa-medium-m"></i></a>
+						</li>
+						<li><a href="https://www.linkedin.com/company/cypherock" target="_blank"><i
+									class="fab fa-linkedin-in"></i></a></li>
+						<li><a href="https://t.me/cypherock" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+						</li>
+						<li><a href="mailto:info@cypherock.com" target="_top"><i class="fas fa-envelope"></i></a></li>
+	
+					</ul>
+				</div>
+				<div class="col-md-2 col-sm-6 col-xs-6 col-lg-3 col-mb-6 tablet-col-3 mx-auto d-flex flex-column">
+					<a href="/about">About</a>
+					<a href="/wallet">Hardware Wallet</a>
+					<a href="/backup">Crypto Backup</a>
+					<a href="/features">Features</a>
+				</div>
+	
+				<div class="col-md-2 col-sm-6 col-xs-6 col-lg-3 col-mb-6 tablet-col-3 mx-auto d-flex flex-column">
+					<a href="https://shop.cypherock.com" target="_blank">Blog</a>
+					<a href="/security">Security</a>
+					<a href="/faq">FAQ</a>
+					<a href="/privacypolicy">Privacy Policy</a>
+	
+				</div>
+				<div class="col-md-2 col-lg-1 tablet-col-1"></div>
+				<div class="col-md-6 col-sm-12 col-xs-12 col-lg-5 tablet-col-5 mx-auto light-text">
+					<section class="newsletter">
+						<div class="container">
+							<div class="row">
+								<div class="content">
+									<div class="input-group">
+										<input type="email" class="form-control" id='email' required='true'
+											placeholder="Email Address">
+										<span class="input-group-btn">
+											<button class="btn" type="button" onclick="subs()">Subscribe</button>
+										</span>
+									</div>
+									<p>Subscribe to our Newsletter. And don’t miss out on any updates from Cypherock.
+									</p>
+	
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+				<hr class="my-2">
+				<div class="col-12">
+					<div class="container-fluid align-items-center text-center">
+						<p class="footer-bottom text-dark">©2020 CYPHEROCK, ALL RIGHTS RESERVED</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- The Modal -->
+	<div class="modal fade" id="myModal">
+		<div class="modal-dialog my-auto">
+			<div class="modal-content">
+				<!-- Modal body -->
+				<div class="text-center sub-modal-body my-auto text-light">
+					Subscribed Successfully!
+				</div>
+			</div>
+		</div>
+	</div>
+		<!-- The Modal -->
+		<div class="modal fade" id="myModal1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+	
+					<!-- Modal Header -->
+	
+	
+					<!-- Modal body -->
+					<div class="modal-body popup-notify">
+						<div class="row">
+							<div class="col-md-12 popup-xs-top">
+	
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<div class="text-center">
+									<h4>Secure Your Crypto Like An Expert!</h4>
+								</div>
+							</div>
+	
+							<div class="col-md-6" style="background: #ECDCC8">
+								<ul>
+									<li>
+										<h3>Free Beneficiary Service for 1 Year</h3>
+									</li>
+									<li>
+										<h3>Be the first to know about </h3>
+									</li>
+									<li>
+										<h3>Early Access to Offers & Premium Features</h3>
+									</li>
+									<li>
+										<h3>Free updates on securing crypto</h3>
+									</li>
+									<li>
+										<h3>50% Off On Cypherock X1</h3>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-6" style="background: #E6E6E6">
+								<div class="form-group">
+									<input type="text" id="email" class="form-control" placeholder="Email">
+									<button type="button" onclick="subs()"  class="btn btn-orange">Join Now!</button>
+								</div>
+								<p>*By completing this form you agree to receive mails from Cypherock</p>
+							</div>
+						</div>
+					</div>
+	
+					<!-- Modal footer -->
+	
+	
+				</div>
+			</div>
+		</div>
+		<div class="navbar1" id="#cookie_directive_container">
+			We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.<a
+				href="https://aboutcookies.org/" target="_blank">Learn more</a>
+			<i onclick="close()" id="banner-close" class="fa fa-times"></i>
+		</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="../js/owl.carousel.min.js"></script>
+<script src="../js/custom.js"></script>
+<script>
+$(".ramu").css('margin-top',80);
+</script>
+<script>
+	(function ($) {
+		"use strict";
+
+		$(window).on('load', function () {
+			$('body').addClass('loaded');
+		});
+
+		$(function () {
+			var header = $("#header"),
+				yOffset = 0,
+				triggerPoint = 80;
+			$(window).on('scroll', function () {
+				yOffset = $(window).scrollTop();
+
+				if (yOffset >= triggerPoint) {
+					header.addClass("navbar-fixed");
+				} else {
+					header.removeClass("navbar-fixed");
+				}
+			});
+		});
+	})(jQuery);
+</script>
+
+</html>

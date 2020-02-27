@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Cypherock - Next-Gen Hardware Wallet With Key Recovery & Backup</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+		integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../css/owl.carousel.min.css">
+		<link rel="shortcut icon" href="../static/img/favicon.png" />
+		<link rel="stylesheet" href="../css/animate.css">
+		
+		<link href="../css/index.css" rel="stylesheet">
+	<script>(function (w, d, s, l, i) {
+		w[l] = w[l] || []; w[l].push({
+			'gtm.start':
+				new Date().getTime(), event: 'gtm.js'
+		}); var f = d.getElementsByTagName(s)[0],
+			j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+				'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-KWPLJ84');</script>
+	<!-- End Google Tag Manager -->
+	<style>
+		.lead {
+			font-size: 1.50rem;
+		}
+	</style>
+
+	<script>
+		(function (h, o, t, j, a, r) {
+			h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+			h._hjSettings = { hjid: 1631139, hjsv: 6 };
+			a = o.getElementsByTagName('head')[0];
+			r = o.createElement('script'); r.async = 1;
+			r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+			a.appendChild(r);
+		})(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"
+		integrity="sha256-S1J4GVHHDMiirir9qsXWc8ZWw74PHHafpsHp5PXtjTs=" crossorigin="anonymous"></script>
+</head>
+
+<body data-spy="scroll" data-target="#navbar" data-offset="60" oncontextmenu="return false;">
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KWPLJ84" height="0" width="0"
+			style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<header id="header" class="header_section sticky-top">
+		<nav class="navbar navbar-expand-lg  navbar-light ">
+			<div class="container navbar-container">
+				<a href="/" class="navbar-brand">
+					<img src="../static/img/logo.png">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto topnav">
+						<li class="nav-item active">
+							<a href="/about" class="nav-link"> <span class="sr-only">(current)</span>About</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Applications <i><img src="../static/img/Arrow.png"></i>
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="/wallet">Hardware Wallet</a>
+								<a class="dropdown-item" href="/backup">Crypto Backup</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a href="/features" class="nav-link">Features</a>
+						</li>
+						<li class="nav-item">
+							<a href="https://medium.com/cypherock" target="_blank" class="nav-link">Blog</a>
+						</li>
+						<li class="nav-item">
+							<a href="/security" class="nav-link">Security</a>
+						</li>
+						<li class="nav-item">
+							<a href="/faq" class="nav-link">FAQ</a>
+						</li>
+
+
+						<li class="nav-item">
+							<a href="https://shop.cypherock.com" type="button"
+								class="btn btn-outline-warning btn-md mx-auto " target=”_blank”>
+								Pre Order
+							</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</nav>
+	</header>
+
+	<section class="header_slider_area owl-carousel">
+		<div class="header_slider_bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<h1>CYPHEROCK<span class="xs-x1"> X1</span></h1>
+						<p>Next Gen Crypto Hardware Wallet and Key Recovery </p>
+						<div class="slide_button">
+							<a href='https://shop.cypherock.com' target="_blank" class="btn btn-orange btn-lg">
+								<div class="text-light"> Pre-Order</div>
+							</a>
+						</div>
+						<!--end .slide_button-->
+					</div>
+				</div>
+				<div class="row img-manage">
+					<span>Backed By</span>
+					<a href="https://labs.consensys.net" target="_blank">
+						<img src="../static/img/consensys1.png" alt="coindesk">
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="header_slider_bg slider_bg2">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<h1>CYPHEROCK<span class="xs-x1"> X1</span></h1>
+						<p>Next Gen Crypto Hardware Wallet and Key Recovery</p>
+						<div class="slide_button">
+							<a href='https://shop.cypherock.com' target="_blank" class="btn btn-orange btn-lg">
+								<div class="text-light"> Pre-Order</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="row img-manage">
+					<span>Backed By</span>
+					<a href="https://labs.consensys.net" target="_blank">
+						<img src="../static/img/consensys1.png" alt="coindesk">
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="header_slider_bg slider_bg3">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<h1>CYPHEROCK<span class="xs-x1"> X1</span></h1>
+						<p>Next Gen Crypto Hardware Wallet and Key Recovery</p>
+						<div class="slide_button">
+							<a href='https://shop.cypherock.com' target="_blank" class="btn btn-orange btn-lg">
+								<div class="text-light"> Pre-Order</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="row img-manage">
+					<span>Backed By</span>
+					<a href="https://labs.consensys.net" target="_blank">
+						<img src="../static/img/consensys1.png" alt="coindesk">
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+			<div class="demo">
+				    <div class="container">
+				        <div class="row">
+				            <div class="col-md-offset-2 col-md-8 ">
+				                <div id="testimonial-slider" class="owl-carousel">
+				                    <div class="testimonial">
+				                        <p class="description">
+				                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus molestie, justo nec convallis sollicitudin, sapien lorem dictum lacus, non consequat odio ipsum nec est. Sed mattis egestas elementum. Nulla facilisi. Quisque placerat risus ac nunc ornare tincidunt. Sed quis faucibus nunc. Pellentesque accumsan arcu mi, eget venenatis mauris.
+				                        </p>
+				                        <h3 class="title">williamson</h3>
+				                        <span class="post">Web Developer</span>
+				                    </div>
+				 
+				                    <div class="testimonial">
+				                        <p class="description">
+				                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus molestie, justo nec convallis sollicitudin, sapien lorem dictum lacus, non consequat odio ipsum nec est. Sed mattis egestas elementum. Nulla facilisi. Quisque placerat risus ac nunc ornare tincidunt. Sed quis faucibus nunc. Pellentesque accumsan arcu mi, eget venenatis mauris.
+				                        </p>
+				                        <h3 class="title">Kristina</h3>
+				                        <span class="post">Web Designer</span>
+				                    </div>
+				 
+				                    <div class="testimonial">
+				                        <p class="description">
+				                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus molestie, justo nec convallis sollicitudin, sapien lorem dictum lacus, non consequat odio ipsum nec est. Sed mattis egestas elementum. Nulla facilisi. Quisque placerat risus ac nunc ornare tincidunt. Sed quis faucibus nunc. Pellentesque accumsan arcu mi, eget venenatis mauris.
+				                        </p>
+				                        <h3 class="title">Miranda Joy</h3>
+				                        <span class="post">Web Developer</span>
+				                    </div>
+				                </div>
+				            </div>
+				        </div>
+				    </div>
+				</div>
+		</section>
+
+	<div class="section">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-12 pd-20">
+					<div class="coindex-container light-orange">
+						<h5>
+							<span><img src="../static/img/arrow-left.png" alt="coindesk"></span><span
+								class="xs-features">Featured in </span>
+							<span><a href="https://www.coindesk.com/consensys-picks-latest-10-blockchain-startups-for-accelerator-program"
+									target="_blank">
+									<img src="../static/img/coindesk.png" alt="coindesk"
+										class="xs-screen img-manage2"></a></span><span>
+								<img src="../static/img/arrow-right.png" alt="coindesk">
+							</span>
+						</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- forbes start--> 
+	<section class="forbes">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h3>“Hackers Stole Over $4 Billion<br/> From Crypto Crimes In 2019”</h3>
+					<h2>-Forbes</h2>
+				</div>
+				<div class="col-lg-4 col-md-4">
+					<div class="forbes-box1">
+						<div class="forbes-box-content">
+							<h4>Every Current Generation Wallet is Physically Hackable</h4>
+							<p>Current Wallets store your crypto in a single place that can be stolen with the right resources.</p>
+						</div>	
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4">
+					<div class="forbes-box2">
+						<div class="forbes-box-content">
+							<h4>Recovery Sheets Exposes Your Crypto to Hacks & Thefts</h4>
+							<p>Your seed phrases on the paper expose your crypto to trust issues, hacks, thefts, fire, earthquake, eternal fear of loss and so on.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4">
+					<div class="forbes-box3">
+						<div class="forbes-box-content">
+							<h4>How will you transfer your Crypto if something happens to you?</h4>
+							<p class="mb--9">You have to safeguard your Crypto while you are alive and only transfer them after you are gone, but nothing really works today without invading privacy and control.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- forbes end--> 
+
+	<!-- screen 3 -->
+	<section class="screen-3-bg">
+		<div class="container screen-3">
+			<div class="row ">
+				<div
+					class="col-md-6 col-sm-12 col-xs-12 screen-3-right my-auto pd-0 wow slideInRight desktop-hide mobile-show">
+					<img src="../static/img/img-12.jpg">
+				</div>
+
+				<div class="col-md-6 col-sm-12 col-xs-12 screen-3-left wow slideInLeft">
+					<div class="container-pd pl-0">
+						<h1>No More Panic Attacks<br>If Wallet Is Stolen</h1>
+						<p>
+							A first of its kind hardware wallet that
+							never stores your private keys in a single
+							place and has similar security to that of a
+							multisig wallets for all Cryptocurrencies.
+						</p>
+						<div class="pull-right mb-48">
+							<button type="button" class="btn btn-outline-warning btn-lg">
+								<a href="/wallet">Know More</a>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-12 col-xs-12 screen-3-right my-auto pd-0 wow slideInRight mobile-hide">
+					<div class="ram">
+
+					</div>
+					
+					<!-- <img src="../static/img/img-12.jpg"> -->
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- Screen 4 -->
+	<section class="screen-3-bg">
+		<div class="container screen-3 ">
+			<div class="row">
+				<div class="col-md-6 col-sm-12 col-xs-12 screen-3-right my-auto pd-0 wow slideInLeft">
+						<div class="ram2">
+
+							</div>
+					<!-- <img src="../static/img/img-2.jpg"> -->
+				</div>
+				<div class="col-md-6 col-sm-12 col-xs-12 screen-3-left wow slideInRight">
+					<div class="container-pd pr-0">
+						<h1>Even Harder To Lose<br>Your Crypto Now</h1>
+						<p>
+							A first of its kind seed phrase backup solution that allows
+							you to store your seed phrases offline in tamper-resistant
+							hardware without a single point of failure.
+						</p>
+						<div class="pull-right mb-48">
+							<button type="button" class="btn btn-outline-warning btn-lg">
+								<a href="/backup">Know More</a>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Featrues -->
+
+	<div class="feature-screen">
+		<div class="container padding text-light">
+			<br><br>
+			<h1 class=" text-light">Our <strong>Features</strong></h1>
+			<div class="wow slideInUp">
+				<div class="row plr-50 mt-40">
+					<div class="col-md-4 col-sm-6 col-xs-12 text-center">
+						<a href="/features#feature-wallet">
+							<div class="feature_item">
+								<img src="../static/img/feature-wallet.svg">
+								<br>
+								<br>
+								<p class="lead">Multiple Wallets Storage</p>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 col-sm-6 col-xs-12 text-center">
+						<a href="/features#feature-distributed">
+
+							<div class="feature_item">
+								<img src="../static/img/feature-distributed.svg">
+								<br>
+								<br>
+								<p class="lead">Distributed Architecture</p>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 col-sm-6 col-xs-12 text-center">
+						<a href="/features#feature-isolated">
+
+							<div class="feature_item">
+								<img src="../static/img/feature-isolated.svg">
+								<br>
+								<br>
+								<p class="lead">Isolated & Cold Storage</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="row plr-50 pb-40">
+
+					<div class="col-md-4 col-sm-6 col-xs-12 text-center">
+						<a href="/features#feature-hardware">
+
+							<div class="feature_item">
+								<img src="../static/img/feature-hardware.svg">
+								<br>
+								<br>
+								<p class="lead">Robust Hardware Security</p>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 col-sm-6 col-xs-12 text-center">
+						<a href="/features#feature-currency">
+
+							<div class="feature_item">
+								<img src="../static/img/feature-currency.svg">
+								<br>
+								<br>
+								<p class="lead">Multi Currency Support</p>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 col-sm-6 col-xs-12 text-center">
+						<a href="/features#feature-security">
+
+							<div class="feature_item">
+								<img src="../static/img/feature-security.svg">
+								<br>
+								<br>
+								<p class="lead">Multi-Layered Security</p>
+							</div>
+						</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Security At Its Core -->
+	<div class="security-screen">
+		<div class="jumbotron security-screen-jumbotron mx-3">
+			<div class="security-screen-title">
+				<h1>Security <strong>At Its Core</strong></h1>
+			</div>
+			<div class="security-screen-text plr-80 wow slideInRight">
+				<p class="lead pd-20">
+					The device uses state-of-the-art hardware architecture to ensure maximum security for the users.
+				</p>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<!-- 50% off Pre Order Now -->
+	<div class="container-fluid wallet-screen mb-10">
+		<div class="row  xl-wallet-screen">
+			<div class="col-md-8 col-sm-12 col-xs-12"></div>
+			<div class="col-md-4 col-sm-12 col-xs-12 wow slideInUp">
+				<p class="display-4">
+					X1 wallet
+				</p>
+				<p class="lead"> Primarily for transaction signing and computation.It never stores the private keys.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid discount-screen-container mb-20">
+		<div class="row  discount-screen">
+			<div class="col-md-3 col-sm-12 col-xs-12 wow slideInUp">
+				<!-- <div class="ml-60"> -->
+				<p class="display-4 text-light">
+					cyCard
+				</p>
+				<p class="lead text-light"> Primarily for Storage. It can always remain airgapped and never be connected
+					to an internet connected device.</p>
+				<!-- </div> -->
+			</div>
+		</div>
+	</div>
+
+	<!-- How it works -->
+	<div class="section-works">
+		<br>
+		<br>
+		<div class="container container-working">
+			<div class="row">
+				<div class="col-md-6">
+					<h1 class="">How it <strong>Works?</strong></h1>
+				</div>
+			</div>
+		</div>
+
+		<br><br>
+
+		<!-- Securing Wallet -->
+		<div class="switch-button"><span class="activeSwitch"></span>
+			<button class="switch-button-case left active-case">Paperless Recovery</button>
+			<button class="switch-button-case right">Hardware Wallet</button>
+		</div>
+		<div id="ram" class="wow slideInRight">
+			<div class="container secure-wallet-container">
+
+				<h3 class="text-center">Securing your Wallet</h3>
+				<div class="row text-center mx-auto">
+					<div class="col-md-4 col-sm-6 col-xs-12 mx-auto">
+						<img src="../static/img/secure-wallet/secure-wallet-pic1.png" height="10rem">
+						<br><br>
+						<p class="lead">Enter your 12/24 Seed Phrase and a Unique PIN</p>
+						<!-- <br><br> -->
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<img src="../static/img/secure-wallet/secure-wallet-pic2.png" style="padding: 0px">
+						<br><br>
+						<p class="lead">Tap the 4 cyCards one by one on the X1 wallet</p>
+						<!-- <br><br> -->
+					</div>
+					<div class="col-md-4 col-sm-12 col-xs-12">
+						<img src="../static/img/secure-wallet/secure-wallet-pic3.png">
+						<br><br>
+						<p class="lead">Store Your cyCards in Remote Locations</p>
+						<!-- <br><br> -->
+					</div>
+
+				</div>
+			</div>
+
+			<hr class="my-4 hr-width">
+
+			<!-- Recovering Wallet -->
+			<div class="container recover-wallet-container">
+				<h3 class="text-center">Recovering your Wallet</h3>
+				<div class="row text-center mx-auto">
+					<div class="col-md-3 col-sm-6 col-xs-12 mx-auto">
+						<img src="../static/img/recover-wallet/recover-wallet-pic1.png" style="padding: 0px">
+						<br><br>
+						<p class="lead">Fetch any 2 of the cyCards</p>
+						<br><br>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<img src="../static/img/recover-wallet/recover-wallet-pic2.png">
+						<br><br>
+						<p class="lead">Enter your PIN</p>
+						<br><br>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<img src="../static/img/recover-wallet/recover-wallet-pic3.png" style="padding:0px">
+						<br><br>
+						<p class="lead">Tap the 2 cards one by one on the X1 wallet</p>
+						<br><br>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<img src="../static/img/recover-wallet/recover-wallet-pic4.png">
+						<br><br>
+						<p class="lead">That's It! You just recovered your wallet!</p>
+						<br><br>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div id="shyam" style="display: none">
+			<div class="container secure-wallet-container">
+
+				<h3 class="text-center">Setting Up the Wallet </h3>
+				<div class="row text-center mx-auto">
+					<div class="col-md-4 col-sm-6 col-xs-12 mx-auto">
+						<img src="../static/img/secure-wallet/secure-wallet-pic1.png">
+						<br><br>
+						<p class="lead">Generate a Wallet and Enter a PIN</p>
+						<!-- <br><br> -->
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<img src="../static/img/secure-wallet/secure-wallet-pic2.png" style="padding: 0px">
+						<br><br>
+						<p class="lead">Tap the 4 cyCards one by one on the X1 wallet</p>
+						<!-- <br><br> -->
+					</div>
+					<div class="col-md-4 col-sm-12 col-xs-12">
+						<img src="../static/img/secure-wallet/secure-wallet-pic3.png">
+						<br><br>
+						<p class="lead">Store Your cyCards in Remote Locations</p>
+						<!-- <br><br> -->
+					</div>
+
+				</div>
+			</div>
+
+			<hr class="my-4 hr-width">
+
+
+			<!-- Recovering Wallet -->
+			<div class="container recover-wallet-container">
+				<h3 class="text-center">Transacting with the Wallet</h3>
+				<div class="row text-center mx-auto">
+					<div class="col-md-3 col-sm-6 col-xs-12 mx-auto">
+						<img src="../static/img/recover-wallet/recover-wallet-pic1.png" style="padding: 0px">
+						<br><br>
+						<p class="lead">Fetch any 2 of the cyCards</p>
+						<br><br>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<img src="../static/img/recover-wallet/recover-wallet-pic2.png">
+						<br><br>
+						<p class="lead">Follow the instructions on the App & enter the PIN</p>
+						<br><br>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<img src="../static/img/recover-wallet/recover-wallet-pic3.png" style="padding: 0px">
+						<br><br>
+						<p class="lead">Tap the 2 cards one by one on the X1 wallets</p>
+						<br><br>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<img src="../static/img/recover-wallet/recover-wallet-pic4.png">
+						<br><br>
+						<p class="lead">That's It! Your transaction is done</p>
+						<br><br>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- secure -->
+	<div class="container-fluid secure-screen bottom">
+		<div class="container">
+		<div class="row  secure-containt">
+			<div class="col-md-5 col-sm-12 col-xs-12 mx-3 my-3 wow slideInUp">
+				<h1 class="text-light pl-90">
+					<strong>Secure</strong> the <br>Wealth For Your <br><strong>Loved Ones</strong>
+				</h1>
+
+			</div>
+			<div class="col-md-6 col-sm-12 col-xs-12 wow slideInUp">
+
+				<div class="secure-discount">
+
+					<p>Get more than 50% off & One year Free Beneficiary Service</p>
+					<a href='https://shop.cypherock.com' target="_blank" class="btn btn-orange btn-lg discount-button">
+						<div class="text-light"> Pre-Order Now </div>
+					</a>
+
+					<p>
+						*Only Till the First 500 Pre-orders
+					</p>
+				</div>
+			</div>
+			<div class="col-md-1 col-sm-12 col-xs-12">
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<!-- Footer -->
+	<footer>
+		<div class="container footer-container">
+			<div class="row footer-padding text-left">
+				<div class="col-md-6">
+					<img src="../static/img/logo-black.png" class="footer-logo">
+				</div>
+				<div class="col-md-6">
+					<ul class="social_footer_ul">
+						<li><a href="https://www.facebook.com/cypherock/" target="_blank"><i
+									class="fab fa-facebook-f"></i></a></li>
+						<li><a href="https://twitter.com/CypherockWallet" target="_blank"><i
+									class="fab fa-twitter"></i></a></li>
+						<li><a href="https://medium.com/cypherock" target="_blank"><i class="fab fa-medium-m"></i></a>
+						</li>
+						<li><a href="https://www.linkedin.com/company/cypherock" target="_blank"><i
+									class="fab fa-linkedin-in"></i></a></li>
+						<li><a href="https://t.me/cypherock" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+						</li>
+						<li><a href="mailto:info@cypherock.com" target="_top"><i class="fas fa-envelope"></i></a></li>
+
+					</ul>
+				</div>
+				<div class="col-md-2 col-sm-6 col-xs-6 col-lg-3 col-mb-6 tablet-col-3 mx-auto d-flex flex-column">
+					<a href="/about">About</a>
+					<a href="/wallet">Hardware Wallet</a>
+					<a href="/backup">Crypto Backup</a>
+					<a href="/features">Features</a>
+				</div>
+
+				<div class="col-md-2 col-sm-6 col-xs-6 col-lg-3 col-mb-6 tablet-col-3 mx-auto d-flex flex-column">
+					<a href="https://shop.cypherock.com" target="_blank">Blog</a>
+					<a href="/security">Security</a>
+					<a href="/faq">FAQ</a>
+					<a href="/privacypolicy">Privacy Policy</a>
+
+				</div>
+				<div class="col-md-2 col-lg-1 tablet-col-1"></div>
+				<div class="col-md-6 col-sm-12 col-xs-12 col-lg-5 tablet-col-5 mx-auto light-text">
+					<section class="newsletter">
+						<div class="container">
+							<div class="row">
+								<div class="content">
+									<div class="input-group">
+										<input type="email" class="form-control" id='email' required='true' placeholder="Email Address">
+										<span class="input-group-btn">
+											<button class="btn" type="button" onclick="subs()" 
+												>Subscribe</button>
+										</span>
+									</div>
+									<p>Subscribe to our Newsletter. And don’t miss out on any updates from Cypherock.
+									</p>
+
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+				<hr class="my-2">
+				<div class="col-12">
+					<div class="container-fluid align-items-center text-center">
+						<p class="footer-bottom text-dark">©2020 CYPHEROCK, ALL RIGHTS RESERVED</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- The Modal -->
+	<div class="modal fade" id="myModal">
+		<div class="modal-dialog my-auto">
+			<div class="modal-content">
+				<!-- Modal body -->
+				<div class="text-center sub-modal-body my-auto text-light">
+					Subscribed Successfully!
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <button class="btn" type="submit" data-toggle="modal" data-target="#myModal1">Pre Subscribe</button> -->
+	<!-- The Modal -->
+	<div class="modal fade" id="myModal1" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body popup-notify">
+					<div class="row">
+						<div class="col-md-12 popup-xs-top">
+
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<div class="text-center">
+								<h4>Secure Your Crypto Like An Expert!</h4>
+							</div>
+						</div>
+
+						<div class="col-md-6" style="background: #ECDCC8">
+							<ul>
+								<li>
+									<h3>Free Beneficiary Service for 1 Year</h3>
+								</li>
+								<li>
+									<h3>Be the first to know about </h3>
+								</li>
+								<li>
+									<h3>Early Access to Offers & Premium Features</h3>
+								</li>
+								<li>
+									<h3>Free updates on securing crypto</h3>
+								</li>
+								<li>
+									<h3>50% Off On Cypherock X1</h3>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-6" style="background: #E6E6E6">
+							<div class="form-group">
+								<input type="text" id="email1" class="form-control" placeholder="Email">
+								<button type="button" onclick="subs1()"  class="btn btn-orange">Join Now!</button>
+							</div>
+							<p>*By completing this form you agree to receive mails from Cypherock</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Modal footer -->
+			</div>
+		</div>
+	
+	
+	</div>
+
+<div class="navbar1" id="#cookie_directive_container">
+We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.<a href="https://aboutcookies.org/" target="_blank">Learn more</a>
+<i onclick="close()" id="banner-close" class="fa fa-times"></i>
+</div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="../js/owl.carousel.min.js"></script>
+<script src="../js/wow.js"></script>
+<script src="../js/custom.js"></script>
+<script>
+	(function ($) {
+		"use strict";
+
+		$(window).on('load', function () {
+			$('body').addClass('loaded');
+		});
+
+		$(function () {
+			var header = $("#header"),
+				yOffset = 0,
+				triggerPoint = 80;
+			$(window).on('scroll', function () {
+				yOffset = $(window).scrollTop();
+
+				if (yOffset >= triggerPoint) {
+					header.addClass("navbar-fixed");
+				} else {
+					header.removeClass("navbar-fixed");
+				}
+			});
+		});
+		$('.header_slider_area').owlCarousel({
+			items: 1,
+			autoHeight: true,
+			autoplay: true,
+			loop: true,
+			nav: false,
+			dots: true,
+			slideSpeed: 300,
+			autoplayTimeout: 7000,
+			touchDrag: false,
+			mouseDrag: false,
+		});
+
+	})(jQuery);
+</script>
+</html>
